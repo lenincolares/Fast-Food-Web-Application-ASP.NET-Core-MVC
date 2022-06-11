@@ -1,8 +1,9 @@
 ﻿using LanchesMac.Context;
 using LanchesMac.Models;
+using LanchesMac.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace LanchesMac.Repositories.Interfaces
+namespace LanchesMac.Repositories
 {
 
     public class LancheRepository : ILancheRepository
