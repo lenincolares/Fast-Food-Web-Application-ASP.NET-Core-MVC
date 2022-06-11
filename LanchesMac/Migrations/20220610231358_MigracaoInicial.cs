@@ -28,7 +28,7 @@ namespace LanchesMac.Migrations
                 {
                     LancheId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nome = table.Column<int>(type: "int", maxLength: 80, nullable: false),
+                    Nome = table.Column<string>(type: "nvarchar(80)", maxLength: 80, nullable: false),
                     DescricaoCurta = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     DescricaoDetalhada = table.Column<string>(type: "nvarchar(300)", maxLength: 300, nullable: false),
                     Preco = table.Column<decimal>(type: "decimal(10,2)", nullable: false),

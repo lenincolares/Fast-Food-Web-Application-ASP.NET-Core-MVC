@@ -8,10 +8,11 @@ namespace LanchesMac.Models
     {
         [Key]
         public int LancheId { get; set; }
+
         [Required(ErrorMessage = "O nome do lanche deve ser informado")]
         [Display(Name = "Nome do Lanche")]
         [StringLength(80, MinimumLength = 10, ErrorMessage = "O {0} deve ter no mínimo {1} e no máximo {2}")]
-        public int Nome { get; set; }
+        public string Nome { get; set; }
 
         [Required(ErrorMessage = "A descrição do lanche deve ser informada")]
         [Display(Name= "Descrição do Lanche")]
