@@ -55,6 +55,7 @@ namespace LanchesMac.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(LoginViewModel registroVM)
         {
             if (ModelState.IsValid)
